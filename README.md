@@ -4,14 +4,14 @@ this is a game to practice the typing
 
 ## Installing
 
-""" bash
+```bash
 npm install
-"""
+```
 
 ## initialization server
 
 how to dev serve
 
-""" bash
+```bash
 npm run dev:serve
-"""
+```
