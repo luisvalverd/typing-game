@@ -84,7 +84,6 @@ export default class View {
     `;
 
     let markErrors = document.getElementsByTagName("span");
-    console.log(errors);
     if (errors.length > 0) {
       for (let i = 0; i < markErrors.length; i++) {
         markErrors[i].setAttribute("class", "text-red-500");
