@@ -5,7 +5,6 @@ export default class Model {
 Bilbo was going to be eleventy - one, 111, a rather curious number, and a very respectable age for a hobbit(the Old Took himself had only reached 130); and Frodo was going to be thirty - three, 33, an important number: the date of his coming of age.
 Tongues began to wag in Hobbiton and Bywater; and rumour of the coming event travelled all over the Shire.The history and character of Mr.Bilbo Baggins became once again the chief topic of conversation; and the older folk suddenly found their reminiscences in welcome demand.No one had a more attentive audience than old Ham Gamgee, commonly known as the Gaffer.He held forth at The Ivy Bush, a small inn on the Bywater road; and he spoke with some authority, for he had tended the garden at Bag End for forty years, and had helped old Holman in the same job before that.Now that he was himself growing old and stiff in the joints, the job was mainly carried on by his youngest son, Sam Gamgee.Both father and son were on very friendly terms with Bilbo and Frodo.They lived on the Hill itself, in Number 3 Bagshot Row just below Bag End.Well, so they say, said the Gaffer.You see: Mr.Drogo, he married poor Miss Primula Brandybuck.She was our Mr.Bilbos first cousin on the mothers side(her mother being the youngest of the Old Tooks daughters); and Mr.Drogo was his second cousin.So Mr.Frodo is his first and second cousin, once removed either way, as the saying is, if you follow me.And Mr.Drogo was staying at Brandy Hall with his father -in -law, old Master Gorbadoc, as he often did after his marriage(him being partial to his vittles, and old Gorbadoc keeping a mighty generous table); and he went out boating on the Brandywine River; and he and his wife were drownded, and poor Mr.Frodo only a child and all.I ve heard they went on the water after dinner in the moonlight, said Old Noakes; and it was Drogos weight as sunk the boat.And I heard she pushed him in, and he pulled her in after him, said Sandyman, the Hobbiton miller.That very month was September, and as fine as you could ask.A day or two later a rumour(probably started by the knowledgeable Sam) was spread about that there were going to be fireworks fireworks, what is more, such as had not been seen in the Shire for nigh on a century, not indeed since the Old Took died.Days passed and The Day drew nearer.An odd - looking waggon laden with odd - looking packages rolled into Hobbiton one evening and toiled up the Hill to Bag End.The startled hobbits peered out of lamplit doors to gape at it.It was driven by outlandish folk, singing strange songs: dwarves with long beards and deep hoods.A few of them remained at Bag End.At the end 
 of the second week in September a cart came in through Bywater from the direction of Brandywine Bridge in broad daylight.`;
-    this.file = null;
     this.list = [];
   }
 
@@ -13,13 +12,6 @@ of the second week in September a cart came in through Bywater from the directio
     this.view = view;
   }
 
-  setFile(file) {
-    console.log(file);
-  }
-
-  getFile() {
-    return this.file;
-  }
   getText() {
     return this.text;
   }

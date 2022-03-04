@@ -5,8 +5,7 @@ export default class StartGame {
 
   onClick(cb) {
     this.btn.onclick = () => {
-      console.log("ok");
-      cb(true);
+      cb();
     };
   }
 }

@@ -1,16 +1,16 @@
 import StartGame from "./components/start-game.js";
-import UploadFile from "./components/upload-file.js";
+import StopGame from "./components/stop-game.js";
 
 export default class View {
   constructor() {
     this.model = null;
     this.text = document.getElementById("text-game");
     this.input = document.getElementById("input-text--game");
-    this.upload = new UploadFile();
+    this.stop = new StopGame();
     this.start = new StartGame();
 
-    this.upload.onClick((text) => this.sendDataFile(text));
     this.start.onClick(() => this.renderText(true));
+    this.stop.onClick(() => this.stopGame());
     this.input.value = "";
   }
 
@@ -22,8 +22,13 @@ export default class View {
     this.model.setFile(text);
   }
 
-  renderText(isClick) {
-    if (isClick) console.log("ok");
+  stopGame() {
+    this.text.classList.add("hidden");
+    this.input.value = "";
+  }
+
+  renderText() {
+    this.stop.openBtn();
     const paraph = this.model.getText();
     this.text.setAttribute(
       "class",
@@ -32,7 +37,7 @@ export default class View {
     this.text.innerHTML = `
       <p>${paraph}</p>
     `;
-    this.text.childNodes[1].setAttribute("class", "border-x-2 px-4");
+    this.text.childNodes[1].setAttribute("class", "px-4");
     this.text.childNodes[1].setAttribute("id", "game--text");
     this.input.onfocus = () => this.getKeyPress();
     this.input.focus();
