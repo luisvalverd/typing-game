@@ -1,3 +1,4 @@
+// Todo: this class get a text and use in the game
 export default class UploadFile {
   constructor() {
     this.btn = document.getElementById("upload-btn");

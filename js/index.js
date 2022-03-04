@@ -1,4 +1,4 @@
-import Model from "./modal.js";
+import Model from "./model.js";
 import View from "./views.js";
 
 document.addEventListener("DOMContentLoaded", () => {

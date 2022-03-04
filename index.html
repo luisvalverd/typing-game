@@ -8,8 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="" href="/favicon.ico" type="image/x-icon" />
   </head>
-  <body class="h-full">
-    <div class="bg-gray-800 text-white h-full">
+  <body class="h-full bg-gray-800">
+    <div class="text-white h-full">
       <header class="w-full h-20 justify-center pt-5">
         <div>
           <h1 class="h-full h-full flex justify-center text-2xl items-center">
@@ -17,23 +17,24 @@
           </h1>
         </div>
       </header>
-      <div class="h-full w-full">
+      <div class="w-full h-4/5">
         <div class="h-auto w-full flex justify-center">
           <button
             class="bg-blue-500 w-36 h-10 transition hover:bg-blue-600 mx-2"
-            id="startBtn"
+            id="start-btn"
             +
             type="button"
           >
             Start
           </button>
-          <div class="mx-2">
+          <div class="mx-2 mb-10">
             <input
               type="file"
               class="hidden"
               name="file-input"
               id="file-input"
             />
+            <!-- this methods is pending-->
             <button
               class="bg-green-500 w-36 h-10 transition hover:bg-green-600 mx-2"
               id="upload-btn"
@@ -42,6 +43,13 @@
             </button>
           </div>
         </div>
+        <div id="text-game"></div>
+        <input
+          type="text"
+          class="bg-inherit opacity-0"
+          id="input-text--game"
+          value=""
+        />
       </div>
     </div>
     <script src="js/index.js" type="module"></script>
